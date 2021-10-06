@@ -3,9 +3,9 @@
 In this cheat sheet is noted how we can perform an buffer overflow attack
 
 Install Immunity Debugger this will be needed to perform the bugger overflow exploitation.
-can be found on: `https://www.immunityinc.com/`
+can be found on: https://www.immunityinc.com/
 
-After installing Immunity debugger install Mona from: `https://github.com/corelan/mona`.
+After installing Immunity debugger install Mona from: https://github.com/corelan/mona.
 Put the .py file in the PyCommands folder (C:\Program Files (x86)\Immunity Inc\Immunity Debugger\PyCommands. 
 This module will be needed to determine the offset/ find the EIP.
 
