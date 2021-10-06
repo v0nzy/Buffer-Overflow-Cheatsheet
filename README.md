@@ -38,9 +38,11 @@ Use `!mona config -set workingfolder c:\mona\%p` to set the working folder and u
 
 ## JMP ESP
 
-After filtering out the Badchars of the application, we will idenfitfy the JMP ESP that will be responsible for running our shellcode that we will insert into the stack. 
+After filtering out the badchars of the application, we will idenfitfy the equivalent for the OPCODE JMP ESP for change the flow of the application to run our shellcode rewriting the stack from its base (EBP). To find the equivalent of the OPCODE JMP ESP we can use the following command:
 
-Run `!mona find -s "\x00"`
+Run `!mona -r esp -cpb "\x00"`
+
+
 
 
 ## Exploitation
