@@ -17,6 +17,9 @@ Run the fuzzer.py script to identify the point where the application will crash.
 ## Finding the Offset
 
 To find the we will need to use the ruby script from metasploit. `/usr/share/metasploit-framework/tools/exploit/pattern_create.rb -l {bytes}`
+
+
+
 ## Badchars
 
 ## JMP ESP
