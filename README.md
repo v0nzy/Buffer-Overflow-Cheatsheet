@@ -1,4 +1,4 @@
-# OSCP-Buffer-Overflow-Cheatsheet
+# Buffer-Overflow-Cheatsheet
 
 In this cheat sheet is noted how we can perform an buffer overflow attack
 
