@@ -16,7 +16,15 @@ Run the fuzzer.py script to identify the point where the application will crash.
 
 ## Finding the Offset
 
-To find the we will need to use the ruby script from metasploit. `/usr/share/metasploit-framework/tools/exploit/pattern_create.rb -l {bytes}`
+After finding the crash point we want to find the Offset to the EIP adress.
+To do this we can use the following script to generate a string.
+`/usr/share/metasploit-framework/tools/exploit/pattern_create.rb -l {bytes}`
+
+To find the EIP we can use the following mona command:
+
+`!mona findesp -distance {used bytes}`
+
+
 
 
 
