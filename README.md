@@ -29,6 +29,13 @@ Put the EIP in the exploit.py script and verify that EIP has been overwritten wi
 
 ## Badchars
 
+To identify badchars we will use mona.
+
+Run the badchars.py script and put the output in the exploit.py script to run it against the application the identify the badchars.
+Use `!mona config -set workingfolder c:\mona\%p` to set the working folder and use `!mona bytearray -b “\x00` and use the compare command to check the values
+`!mona compare -f C:\mona\{machine_name}\bytearray.bin -A {ESP ADRESS}`
+
+
 ## JMP ESP
 
 ## Exploitation
