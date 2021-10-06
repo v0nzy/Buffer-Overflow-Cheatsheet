@@ -20,12 +20,11 @@ After finding the crash point we want to find the Offset to the EIP adress.
 To do this we can use the following script to generate a string.
 `/usr/share/metasploit-framework/tools/exploit/pattern_create.rb -l {bytes}`
 
-To find the EIP we can use the following mona command:
+To determine the EIP we can use the following mona command:
 
 `!mona findesp -distance {used bytes}`
 
-
-
+Put the EIP in the exploit.py script and verify that EIP has been overwritten with the character "B" (42 in hexa)
 
 
 ## Badchars
