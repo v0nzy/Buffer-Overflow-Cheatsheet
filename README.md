@@ -1,6 +1,6 @@
 # OSCP-Buffer-Overflow-Cheatsheet
 
-## Immunity Debugger & Mona 
+In this cheat sheet is noted how we can perform an buffer overflow attack
 
 Install Immunity Debugger this will be needed to perform the bugger overflow exploitation.
 can be found on: `https://www.immunityinc.com/`
