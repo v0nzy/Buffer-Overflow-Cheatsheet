@@ -22,7 +22,7 @@ To do this we can use the following script to generate a string.
 
 To determine the EIP we can use the following mona command:
 
-`!mona findesp -distance {used bytes}`
+`!mona findesp -distance {used bytes}` *start Mona first using the !mona modules command*
 
 Put the EIP in the exploit.py script and verify that EIP has been overwritten with the character "B" (42 in hexa)
 
