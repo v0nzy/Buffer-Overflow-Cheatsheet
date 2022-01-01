@@ -38,7 +38,7 @@ Use `!mona config -set workingfolder c:\mona\%p` to set the working folder and u
 
 ## JMP ESP
 
-After filtering out the badchars of the application, we will idenfitfy the equivalent for the OPCODE JMP ESP for change the flow of the application to run our shellcode rewriting the stack from its base (EBP). To find the equivalent of the OPCODE JMP ESP we can use the following command: `!mona -r esp -cpb "\x00"`
+After filtering out the badchars of the application, we will idenfitfy the equivalent for the OPCODE JMP ESP for change the flow of the application to run our shellcode rewriting the stack from its base (EBP). To find the equivalent of the OPCODE JMP ESP we can use the following command: `!mona jmp -r esp -cpb "\x00"`
 
 After finding the EBP adress we need to convert this adress to littl-endian format to use it in our code like this:
 
